@@ -10,3 +10,29 @@ Step 2: run -
 ```
 time_series_plots.py
 ```
+
+This should create the following directories, in order by process:
+```
+Irrigation District Data
+Irrigation District Summary Data
+Irrigation District Time Series
+Irrigation District Data - Final
+Time Series Data Plots
+```
+
+## Output Data Products
+
+### Irrigation District Data:
+Compiles data from all locations within an irrigation district into one CSV, for each irrigation district, for each year.
+
+### Irrigation District Summary Data:
+Sums data across all locations in a given irrigation district to get the year's distribution of reported crop acreage.
+
+### Irrigation District Time Series:
+Constructs time series data within an irrigation district across all years.  Two CSVs per irrigation district because of the change in crop code ID that occurred between 1989 and 1990, which will be fixed in the next step.
+
+### Irrigation District Data - Final:
+Connects time series data across 1989-1990 by creating a code equivalency, the output being continuous yearly time-step data sets of crop acreage for all crops (by current crop ID format) for each irrigation district.
+
+### Time Series Data Plots:
+A repository with stacked area plots of top crops as their contribution to the total, over the historical period from 1974-2016, for each irrigation district.
