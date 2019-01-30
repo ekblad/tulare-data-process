@@ -1,15 +1,21 @@
 # tulare-data-process
 This repository converts data derived from California Pesticide Use Reports into time series data and plots top crops for each irrigation district.
 
-Step 1: run -
+## raw data inputs
+This repository builds off of a data repository created by Natalie Mall - @nataliemall - all required data is included in this repository, but it can also be accessed/created here:
+(https://github.com/nataliemall/crop_acreages_CA_DPR_reports)
+
+## Step 1: run -
 ```
 raw_data_processing.py
 ```
 
-Step 2: run -
+## Step 2: run -
 ```
 time_series_plots.py
 ```
+
+## Output Data Products
 
 This should create the following directories, in order by process:
 ```
@@ -19,8 +25,6 @@ Irrigation District Time Series
 Irrigation District Data - Final
 Time Series Data Plots
 ```
-
-## Output Data Products
 
 ### Irrigation District Data:
 Compiles data from all locations within an irrigation district into one CSV, for each irrigation district, for each year.
